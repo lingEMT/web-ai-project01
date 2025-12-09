@@ -1,0 +1,13 @@
+static/
+├── index.html           # 主页面/入口
+├── css/
+│   └── styles.css       # 样式文件
+├── js/
+│   ├── main.js          # 主逻辑
+│   ├── api.js           # API请求封装
+│   ├── dept.js          # 部门管理相关逻辑
+│   ├── emp.js           # 员工管理相关逻辑
+│   └── report.js        # 报表统计相关逻辑
+└── components/
+    ├── nav.html         # 导航组件
+    └── modal.html       # 模态框组件

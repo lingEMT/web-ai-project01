@@ -1,0 +1,92 @@
+2025-12-04 10:53:51.778 [main] INFO  c.ling.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 23.0.2 with PID 8388 (D:\java_Project\web-ai-project01\tlias-web-management\target\classes started by Lenovo in D:\java_Project\web-ai-project01)
+2025-12-04 10:53:51.782 [main] INFO  c.ling.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-04 10:53:52.801 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-04 10:53:52.811 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-04 10:53:52.814 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-04 10:53:52.814 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-04 10:53:52.852 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-04 10:53:52.853 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1040 ms
+2025-12-04 10:53:53.191 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-12-04 10:53:53.547 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04 10:53:53.591 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-04 10:53:53.606 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-04 10:53:53.612 [main] INFO  c.ling.TliasWebManagementApplication - Started TliasWebManagementApplication in 2.116 seconds (process running for 3.277)
+2025-12-04 10:53:53.937 [RMI TCP Connection(1)-26.233.6.99] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04 10:53:53.937 [RMI TCP Connection(1)-26.233.6.99] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-04 10:53:53.939 [RMI TCP Connection(1)-26.233.6.99] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-12-04 10:53:53.940 [RMI TCP Connection(2)-26.233.6.99] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-04 10:53:54.246 [RMI TCP Connection(2)-26.233.6.99] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5701beef
+2025-12-04 10:53:54.257 [RMI TCP Connection(2)-26.233.6.99] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-04 10:53:58.021 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-04 10:53:58.026 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-04 10:53:58.030 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-04 10:53:58.034 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-04 11:06:38.052 [main] INFO  c.ling.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 23.0.2 with PID 27516 (D:\java_Project\web-ai-project01\tlias-web-management\target\classes started by Lenovo in D:\java_Project\web-ai-project01)
+2025-12-04 11:06:38.053 [main] INFO  c.ling.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-04 11:06:38.948 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-04 11:06:38.956 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-04 11:06:38.957 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-04 11:06:38.957 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-04 11:06:38.992 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-04 11:06:38.993 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 910 ms
+2025-12-04 11:06:39.289 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-12-04 11:06:39.630 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04 11:06:39.665 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-04 11:06:39.678 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-04 11:06:39.685 [main] INFO  c.ling.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.893 seconds (process running for 2.574)
+2025-12-04 11:06:40.157 [RMI TCP Connection(2)-26.233.6.99] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-04 11:06:40.159 [RMI TCP Connection(1)-26.233.6.99] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04 11:06:40.160 [RMI TCP Connection(1)-26.233.6.99] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-04 11:06:40.160 [RMI TCP Connection(1)-26.233.6.99] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-04 11:06:40.407 [RMI TCP Connection(2)-26.233.6.99] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6cd3a2e5
+2025-12-04 11:06:40.414 [RMI TCP Connection(2)-26.233.6.99] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-04 11:06:44.202 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-04 11:06:44.207 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-04 11:06:44.212 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-04 11:06:44.216 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-04 11:07:07.563 [main] INFO  c.ling.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 23.0.2 with PID 31028 (D:\java_Project\web-ai-project01\tlias-web-management\target\classes started by Lenovo in D:\java_Project\web-ai-project01)
+2025-12-04 11:07:07.564 [main] INFO  c.ling.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-04 11:07:08.463 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-04 11:07:08.472 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-04 11:07:08.473 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-04 11:07:08.473 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-04 11:07:08.507 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-04 11:07:08.507 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 912 ms
+2025-12-04 11:07:08.825 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-12-04 11:07:09.183 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04 11:07:09.224 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-04 11:07:09.237 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-04 11:07:09.245 [main] INFO  c.ling.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.914 seconds (process running for 2.58)
+2025-12-04 11:07:09.369 [RMI TCP Connection(4)-26.233.6.99] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04 11:07:09.369 [RMI TCP Connection(4)-26.233.6.99] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-04 11:07:09.370 [RMI TCP Connection(3)-26.233.6.99] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-04 11:07:09.371 [RMI TCP Connection(4)-26.233.6.99] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-04 11:07:09.646 [RMI TCP Connection(3)-26.233.6.99] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ddd001a
+2025-12-04 11:07:09.649 [RMI TCP Connection(3)-26.233.6.99] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-04 11:07:54.773 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-04 11:07:54.777 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-04 11:07:54.780 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-04 11:07:54.784 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-04 15:35:01.125 [main] INFO  c.ling.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 23.0.2 with PID 3668 (D:\java_Project\web-ai-project01\tlias-web-management\target\classes started by Lenovo in D:\java_Project\web-ai-project01)
+2025-12-04 15:35:01.127 [main] INFO  c.ling.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-04 15:35:02.231 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-04 15:35:02.242 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-04 15:35:02.243 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-04 15:35:02.243 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-04 15:35:02.292 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-04 15:35:02.292 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1128 ms
+2025-12-04 15:35:02.648 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-12-04 15:35:03.044 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04 15:35:03.086 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-04 15:35:03.102 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-04 15:35:03.116 [main] INFO  c.ling.TliasWebManagementApplication - Started TliasWebManagementApplication in 2.308 seconds (process running for 3.208)
+2025-12-04 15:35:03.651 [RMI TCP Connection(2)-26.233.6.99] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04 15:35:03.651 [RMI TCP Connection(2)-26.233.6.99] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-04 15:35:03.652 [RMI TCP Connection(2)-26.233.6.99] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-04 15:35:03.653 [RMI TCP Connection(3)-26.233.6.99] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-04 15:35:03.985 [RMI TCP Connection(3)-26.233.6.99] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2037f13a
+2025-12-04 15:35:03.989 [RMI TCP Connection(3)-26.233.6.99] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-04 15:35:11.696 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-04 15:35:11.701 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-04 15:35:11.704 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-04 15:35:11.710 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

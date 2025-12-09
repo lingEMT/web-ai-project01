@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>员工管理系统</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="main-body">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- 侧边栏 -->
+            <div class="col-md-2 sidebar">
+                <div class="sidebar-header">
+                    <h3>员工管理系统</h3>
+                </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" data-page="dept">
+                            <i class="fa fa-building"></i> 部门管理
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-page="emp">
+                            <i class="fa fa-users"></i> 员工管理
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-page="report">
+                            <i class="fa fa-bar-chart"></i> 报表统计
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="logoutBtn">
+                            <i class="fa fa-sign-out"></i> 退出登录
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 主内容区 -->
+            <div class="col-md-10 main-content">
+                <div class="content-header">
+                    <h2 id="pageTitle">部门管理</h2>
+                </div>
+                
+                <!-- 部门管理页面 -->
+                <div id="deptPage" class="content-page">
+                    <!-- 部门列表 -->
+                    <div class="mb-3">
+                        <button class="btn btn-primary" id="addDeptBtn">
+                            <i class="fa fa-plus"></i> 新增部门
+                        </button>
+                    </div>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>部门ID</th>
+                                <th>部门名称</th>
+                                <th>创建时间</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="deptTableBody">
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 员工管理页面 -->
+                <div id="empPage" class="content-page" style="display: none;">
+                    <!-- 员工查询 -->
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <form id="empQueryForm">
+                                <div class="row g-3">
+                                    <div class="col-md-3">
+                                        <label for="empName" class="form-label">姓名</label>
+                                        <input type="text" class="form-control" id="empName" name="name">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="empGender" class="form-label">性别</label>
+                                        <select class="form-select" id="empGender" name="gender">
+                                            <option value="">全部</option>
+                                            <option value="1">男</option>
+                                            <option value="0">女</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="empBegin" class="form-label">开始日期</label>
+                                        <input type="date" class="form-control" id="empBegin" name="begin">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="empEnd" class="form-label">结束日期</label>
+                                        <input type="date" class="form-control" id="empEnd" name="end">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btn btn-primary me-2">
+                                            <i class="fa fa-search"></i> 查询
+                                        </button>
+                                        <button type="button" class="btn btn-secondary" id="resetEmpQueryBtn">
+                                            <i class="fa fa-refresh"></i> 重置
+                                        </button>
+                                        <button type="button" class="btn btn-primary ms-2" id="addEmpBtn">
+                                            <i class="fa fa-plus"></i> 新增员工
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- 员工列表 -->
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" id="selectAllEmp"></th>
+                                <th>ID</th>
+                                <th>用户名</th>
+                                <th>姓名</th>
+                                <th>性别</th>
+                                <th>手机号</th>
+                                <th>岗位</th>
+                                <th>薪资</th>
+                                <th>入职日期</th>
+                                <th>部门</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="empTableBody">
+                        </tbody>
+                    </table>
+
+                    <!-- 分页 -->
+                    <nav aria-label="Page navigation" id="empPagination">
+                    </nav>
+                </div>
+
+                <!-- 报表统计页面 -->
+                <div id="reportPage" class="content-page" style="display: none;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    <h4>员工岗位分布</h4>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="jobChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    <h4>员工性别分布</h4>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="genderChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 部门模态框 -->
+    <div class="modal fade" id="deptModal" tabindex="-1" aria-labelledby="deptModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deptModalLabel">新增部门</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="deptForm">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="deptName" class="form-label">部门名称</label>
+                            <input type="text" class="form-control" id="deptName" name="name" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                        <button type="submit" class="btn btn-primary">保存</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 员工模态框 -->
+    <div class="modal fade" id="empModal" tabindex="-1" aria-labelledby="empModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="empModalLabel">新增员工</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="empForm" enctype="multipart/form-data">
+                    <div class="modal-body">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="empUsername" class="form-label">用户名</label>
+                                <input type="text" class="form-control" id="empUsername" name="username" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="empPassword" class="form-label">密码</label>
+                                <input type="password" class="form-control" id="empPassword" name="password" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="empRealName" class="form-label">姓名</label>
+                                <input type="text" class="form-control" id="empRealName" name="name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="empGenderSelect" class="form-label">性别</label>
+                                <select class="form-select" id="empGenderSelect" name="gender" required>
+                                    <option value="1">男</option>
+                                    <option value="0">女</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="empPhone" class="form-label">手机号</label>
+                                <input type="tel" class="form-control" id="empPhone" name="phone" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="empJob" class="form-label">岗位</label>
+                                <select class="form-select" id="empJob" name="job" required>
+                                    <option value="1">经理</option>
+                                    <option value="2">开发</option>
+                                    <option value="3">测试</option>
+                                    <option value="4">运维</option>
+                                    <option value="5">产品</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="empSalary" class="form-label">薪资</label>
+                                <input type="number" class="form-control" id="empSalary" name="salary" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="empEntryDate" class="form-label">入职日期</label>
+                                <input type="date" class="form-control" id="empEntryDate" name="entryDate" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="empDeptId" class="form-label">部门</label>
+                                <select class="form-select" id="empDeptId" name="deptId" required>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="empImage" class="form-label">头像</label>
+                                <input type="file" class="form-control" id="empImage" name="image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                        <button type="submit" class="btn btn-primary">保存</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/dept.js"></script>
+    <script src="js/emp.js"></script>
+    <script src="js/report.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

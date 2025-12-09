@@ -1,0 +1,6 @@
+2025-11-30 21:30:18.558 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.ling.TliasWebManagementApplicationTests]: TliasWebManagementApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-30 21:30:18.658 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.ling.TliasWebManagementApplication for test class com.ling.TliasWebManagementApplicationTests
+2025-11-30 21:30:18.968 [main] INFO  c.l.TliasWebManagementApplicationTests - Starting TliasWebManagementApplicationTests using Java 23.0.2 with PID 33988 (started by Lenovo in D:\java_Project\web-ai-project01\tlias-web-management)
+2025-11-30 21:30:18.969 [main] INFO  c.l.TliasWebManagementApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-11-30 21:30:20.199 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-11-30 21:30:20.546 [main] INFO  c.l.TliasWebManagementApplicationTests - Started TliasWebManagementApplicationTests in 1.794 seconds (process running for 2.673)

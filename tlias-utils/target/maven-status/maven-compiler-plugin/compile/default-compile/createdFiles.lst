@@ -1,0 +1,4 @@
+com\ling\utils\CurrentHolder.class
+com\ling\utils\AliyunOSSOperator.class
+com\ling\utils\AliyunOSSProperties.class
+com\ling\utils\JwtUtils.class

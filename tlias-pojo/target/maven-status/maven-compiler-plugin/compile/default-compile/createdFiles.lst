@@ -1,0 +1,9 @@
+com\ling\pojo\Dept.class
+com\ling\pojo\Emp.class
+com\ling\pojo\EmpQueryParam.class
+com\ling\pojo\Result.class
+com\ling\pojo\JobOption.class
+com\ling\pojo\LoginInfo.class
+com\ling\pojo\OperateLog.class
+com\ling\pojo\EmpExpr.class
+com\ling\pojo\PageResult.class

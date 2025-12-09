@@ -1,0 +1,67 @@
+2025-11-30 13:59:13.012 [main] INFO  c.ling.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 23.0.2 with PID 13484 (D:\java_Project\web-ai-project01\tlias-web-management\target\classes started by Lenovo in D:\java_Project\web-ai-project01)
+2025-11-30 13:59:13.013 [main] INFO  c.ling.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-30 13:59:14.094 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-30 13:59:14.105 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-30 13:59:14.106 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-30 13:59:14.106 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-11-30 13:59:14.143 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-30 13:59:14.143 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1080 ms
+2025-11-30 13:59:14.449 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-11-30 13:59:14.732 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-30 13:59:14.752 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-30 13:59:14.758 [main] INFO  c.ling.TliasWebManagementApplication - Started TliasWebManagementApplication in 2.049 seconds (process running for 3.08)
+2025-11-30 13:59:51.075 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-30 13:59:51.076 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-30 13:59:51.078 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-11-30 13:59:51.085 [http-nio-8080-exec-2] ERROR com.ling.filter.TokenFilter - 请求路径: /emps, 未携带token
+2025-11-30 14:00:26.253 [http-nio-8080-exec-3] INFO  com.ling.controller.LoginController - 登录信息: zhongli, 123456
+2025-11-30 14:00:26.298 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-30 14:00:27.047 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2cd80385
+2025-11-30 14:00:27.049 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-30 14:00:54.375 [http-nio-8080-exec-4] ERROR com.ling.filter.TokenFilter - 请求路径: /emps, 未携带token
+2025-11-30 14:02:16.205 [http-nio-8080-exec-7] INFO  com.ling.controller.EmpController - 更新员工信息, Emp(id=null, username=faerjia, password=null, name=纳西妲, gender=2, phone=13800138054, job=3, salary=18000, image=avatar/faerjia.jpg, entryDate=2021-01-15, deptId=4, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-11-30 14:02:16.250 [http-nio-8080-exec-7] INFO  com.ling.aop.OperateLogAspect - 保存操作日志: OperateLog(id=null, operateEmpId=0, operateTime=2025-11-30T14:02:16.235379800, className=com.ling.controller.EmpController, methodName=update, methodParams=[Emp(id=null, username=faerjia, password=null, name=纳西妲, gender=2, phone=13800138054, job=3, salary=18000, image=avatar/faerjia.jpg, entryDate=2021-01-15, deptId=4, createTime=null, updateTime=2025-11-30T14:02:16.212112, deptName=null, exprList=null)], returnValue=Result(code=1, msg=success, data=null), costTime=30)
+2025-11-30 14:24:49.013 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m21s602ms526µs700ns).
+2025-11-30 16:32:45.927 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h11m56s13ms854µs500ns).
+2025-11-30 17:26:31.572 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-30 17:26:31.586 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-30 17:26:31.595 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-30 17:26:31.601 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-30 21:16:59.572 [main] INFO  c.ling.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 23.0.2 with PID 31228 (D:\java_Project\web-ai-project01\tlias-web-management\target\classes started by Lenovo in D:\java_Project\web-ai-project01)
+2025-11-30 21:16:59.574 [main] INFO  c.ling.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-30 21:17:00.486 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-30 21:17:00.498 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-30 21:17:00.499 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-30 21:17:00.500 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-11-30 21:17:00.550 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-30 21:17:00.550 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 942 ms
+2025-11-30 21:17:00.884 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-11-30 21:17:01.178 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-30 21:17:01.196 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-30 21:17:01.201 [main] INFO  c.ling.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.923 seconds (process running for 2.869)
+2025-11-30 21:17:35.767 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-30 21:17:35.767 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-30 21:17:35.771 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-11-30 21:17:36.042 [http-nio-8080-exec-1] INFO  com.ling.controller.EmpController - 更新员工信息, Emp(id=null, username=faerjia, password=null, name=纳西妲, gender=2, phone=13800138054, job=3, salary=18000, image=avatar/faerjia.jpg, entryDate=2021-01-15, deptId=4, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-11-30 21:17:36.120 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-30 21:17:36.867 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@583ed6cd
+2025-11-30 21:17:36.871 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-30 21:17:36.975 [http-nio-8080-exec-1] INFO  com.ling.aop.OperateLogAspect - 保存操作日志: OperateLog(id=null, operateEmpId=1, operateTime=2025-11-30T21:17:36.946673, className=com.ling.controller.EmpController, methodName=update, methodParams=[Emp(id=null, username=faerjia, password=null, name=纳西妲, gender=2, phone=13800138054, job=3, salary=18000, image=avatar/faerjia.jpg, entryDate=2021-01-15, deptId=4, createTime=null, updateTime=2025-11-30T21:17:36.055847800, deptName=null, exprList=null)], returnValue=Result(code=1, msg=success, data=null), costTime=903)
+2025-11-30 21:19:56.697 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-30 21:19:56.702 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-30 21:19:56.708 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-30 21:19:56.713 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-30 21:24:34.570 [main] INFO  c.ling.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 23.0.2 with PID 12260 (D:\java_Project\web-ai-project01\tlias-web-management\target\classes started by Lenovo in D:\java_Project\web-ai-project01)
+2025-11-30 21:24:34.571 [main] INFO  c.ling.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-30 21:24:35.332 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9092 (http)
+2025-11-30 21:24:35.340 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2025-11-30 21:24:35.342 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-30 21:24:35.343 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-11-30 21:24:35.374 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-30 21:24:35.375 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 773 ms
+2025-11-30 21:24:35.618 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-11-30 21:24:35.829 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2025-11-30 21:24:35.842 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9092 (http) with context path '/'
+2025-11-30 21:24:35.848 [main] INFO  c.ling.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.552 seconds (process running for 2.208)
+2025-11-30 21:24:39.077 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-30 21:24:39.085 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
